@@ -17,7 +17,7 @@ public class bebidascalientes extends bebidas{
     public void seleccion() {
         int op;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Que bebida desea? /n 1. Tinto /n 2. Cafe /n 3. Agua aromatica" );
+        System.out.println("Que bebida desea? 1. Tinto /n 2. Cafe /n 3. Agua aromatica" );
   
         op = sc.nextInt();
         switch (op){
