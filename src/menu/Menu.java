@@ -20,7 +20,9 @@ public class Menu {
      */
     public static void main(String[] args) {
         
-        Menu bb = new bebida ();
+        bebidas bb = new  bebidascalientes();
+        bb.seleccion();
+        
         
     }
 }

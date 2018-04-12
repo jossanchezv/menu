@@ -5,10 +5,27 @@
  */
 package pp;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Estudiantes
  */
-public class carnes {
-    
+public abstract class carnes extends pp {
+        @Override
+    public void seleccion() {
+        int op;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Que carne desea? /n 1. Res /n 2. Cerdo /n 3. Pollo" );
+  
+        op = sc.nextInt();
+        switch (op){
+            case 1:
+                sel= "Res";
+            case 2:
+                sel= "Cerdo";
+            case 3:
+                sel= "Pollo";       
+        }
+    }
 }

@@ -9,6 +9,7 @@ package pp;
  *
  * @author Estudiantes
  */
-public class pp {
-    
+public abstract class pp {
+        String sel;
+ public abstract void seleccion();
 }

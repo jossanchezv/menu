@@ -5,10 +5,26 @@
  */
 package pp;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Estudiantes
  */
-public class ensalada {
-    
+public class ensalada extends pp {
+        @Override
+    public void seleccion() {
+        int op;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Que ensalada desea? /n 1. Frutas /n 2. Verduras /n " );
+  
+        op = sc.nextInt();
+        switch (op){
+            case 1:
+                sel= "Tinto";
+            case 2:
+                sel= "cafe";    
+        }
+    }
+
 }

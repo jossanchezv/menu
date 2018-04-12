@@ -4,11 +4,16 @@
  * and open the template in the editor.
  */
 package bebida;
+import java.util.*;
 
 /**
  *
  * @author Estudiantes
  */
-public class bebidas {
-    
+public abstract class bebidas {
+    String sel;
+    int a;
+ public abstract void seleccion();
+
+  
 }
