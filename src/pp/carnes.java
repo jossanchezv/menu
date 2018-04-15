@@ -16,8 +16,8 @@ public  class carnes extends pp {
     public void seleccion() {
         int op;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Que carne desea? 1.Res  2.Cerdo  3.Pollo" );
-  
+            System.out.println("El plato principal trae inicialmente arroz y papas a la francesa.");
+        System.out.println("que carne desea? 1.Res  2.Cerdo  3.Pollo" );
         op = sc.nextInt();
         switch (op){
             case 1:

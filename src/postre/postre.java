@@ -9,6 +9,10 @@ package postre;
  *
  * @author Estudiantes
  */
-public class postre {
-    
+public abstract class postre {
+    String sel;
+    int a;
+    int preferencia;
+    public abstract void seleccion();
+
 }

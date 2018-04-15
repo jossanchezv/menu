@@ -3,30 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bebida;
+package pp;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Estudiantes
+ * @author ASUS
  */
-public class bebidascalientes extends bebidas {
+public class legumbre extends pp {
 
     @Override
     public void seleccion() {
         int op;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Que bebida desea? 1. Tinto 2. Cafe 3. Agua aromatica");
-
+        System.out.println("Que  desea para acompañar? 1.lenteja  2.arveja  3.ahuyama");
         op = sc.nextInt();
         switch (op) {
             case 1:
-                sel = "Tinto";
+                sel = "lenteja";
             case 2:
-                sel = "cafe";
+                sel = "arveja";
             case 3:
-                sel = "Agua aromatica";
+                sel = "ahuyama";
         }
     }
+
 }

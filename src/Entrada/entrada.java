@@ -5,14 +5,19 @@
  */
 package Entrada;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Estudiantes
  */
 public abstract class entrada {
+
     String sel;
     int a;
-    int c;
-    public abstract void preferencia();
+    int preferencia;
     public abstract void seleccion();
+
+
+    
 }
