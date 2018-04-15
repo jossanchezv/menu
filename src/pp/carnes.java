@@ -11,12 +11,12 @@ import java.util.Scanner;
  *
  * @author Estudiantes
  */
-public abstract class carnes extends pp {
+public  class carnes extends pp {
         @Override
     public void seleccion() {
         int op;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Que carne desea? /n 1. Res /n 2. Cerdo /n 3. Pollo" );
+        System.out.println("Que carne desea? 1.Res  2.Cerdo  3.Pollo" );
   
         op = sc.nextInt();
         switch (op){

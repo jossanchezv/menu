@@ -11,24 +11,22 @@ import java.util.Scanner;
  *
  * @author Estudiantes
  */
-public class bebidascalientes extends bebidas{
+public class bebidascalientes extends bebidas {
 
     @Override
     public void seleccion() {
         int op;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Que bebida desea? 1. Tinto /n 2. Cafe /n 3. Agua aromatica" );
-  
+        System.out.println("Que bebida desea? 1. Tinto 2. Cafe 3. Agua aromatica");
+
         op = sc.nextInt();
-        switch (op){
+        switch (op) {
             case 1:
-                sel= "Tinto";
+                sel = "Tinto";
             case 2:
-                sel= "cafe";
+                sel = "cafe";
             case 3:
-                sel= "Agua aromatica";       
+                sel = "Agua aromatica";
         }
     }
-
-    
 }

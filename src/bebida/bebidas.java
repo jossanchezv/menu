@@ -14,6 +14,4 @@ public abstract class bebidas {
     String sel;
     int a;
  public abstract void seleccion();
-
-  
 }

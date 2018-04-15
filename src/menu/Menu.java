@@ -19,10 +19,17 @@ public class Menu {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        bebidas bb = new  bebidascalientes();
+        entrada gu = new guia();
+        gu.preferencia();
+        entrada en = new fruta();
+
+        en.seleccion();
+        entrada so = new sopa();
+
+        so.seleccion();
+        pp ab = new carnes();
+        ab.seleccion();
+        bebidas bb = new bebidascalientes();
         bb.seleccion();
-        
-        
     }
 }

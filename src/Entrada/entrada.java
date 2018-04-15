@@ -9,6 +9,10 @@ package Entrada;
  *
  * @author Estudiantes
  */
-public class entrada {
-    
+public abstract class entrada {
+    String sel;
+    int a;
+    int c;
+    public abstract void preferencia();
+    public abstract void seleccion();
 }
