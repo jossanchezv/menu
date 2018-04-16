@@ -22,7 +22,7 @@ public  class carnes extends pp {
             case 2:
                 sel= "Cerdo";
             case 3:
-                sel= "Pollo";       
+                sel= "Pollo";
         }
     }
 }
