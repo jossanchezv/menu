@@ -5,7 +5,7 @@
  */
 package pp;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,11 +14,7 @@ import java.util.Scanner;
 public class ensalada extends pp {
         @Override
     public void seleccion() {
-        int op;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Que ensalada desea?  1. Frutas  2. Verduras " );
-  
-        op = sc.nextInt();
+        int op= Integer.parseInt(JOptionPane.showInputDialog("Que ensalada desea? \n 1. Frutas \n 2. Verduras " ));
         switch (op){
             case 1:
                 sel= "Frutas";

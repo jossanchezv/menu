@@ -5,7 +5,7 @@
  */
 package pp;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,10 +15,7 @@ public class legumbre extends pp {
 
     @Override
     public void seleccion() {
-        int op;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Que  desea para acompañar? 1.lenteja  2.arveja  3.ahuyama");
-        op = sc.nextInt();
+        int op= Integer.parseInt(JOptionPane.showInputDialog("Que desea para acompañar? \n 1.lenteja \n 2.arveja \n 3.ahuyama"));
         switch (op) {
             case 1:
                 sel = "lenteja";
@@ -28,5 +25,4 @@ public class legumbre extends pp {
                 sel = "ahuyama";
         }
     }
-
 }

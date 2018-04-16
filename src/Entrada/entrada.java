@@ -5,8 +5,6 @@
  */
 package Entrada;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Estudiantes
@@ -14,10 +12,9 @@ import java.util.Scanner;
 public abstract class entrada {
 
     String sel;
+    String u;
     int a;
     int preferencia;
     public abstract void seleccion();
-
-
-    
+    public abstract void imprimir();
 }

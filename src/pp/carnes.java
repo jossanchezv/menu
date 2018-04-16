@@ -5,7 +5,7 @@
  */
 package pp;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,11 +14,8 @@ import java.util.Scanner;
 public  class carnes extends pp {
         @Override
     public void seleccion() {
-        int op;
-        Scanner sc = new Scanner(System.in);
-            System.out.println("El plato principal trae inicialmente arroz y papas a la francesa.");
-        System.out.println("que carne desea? 1.Res  2.Cerdo  3.Pollo" );
-        op = sc.nextInt();
+        JOptionPane.showMessageDialog(null, "El plato principal trae inicialmente arroz y papas a la francesa.");
+        int op= Integer.parseInt(JOptionPane.showInputDialog("que carne desea? \n 1.Res \n 2.Cerdo \n 3.Pollo"));
         switch (op){
             case 1:
                 sel= "Res";

@@ -5,7 +5,7 @@
  */
 package postre;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,17 +14,17 @@ import java.util.Scanner;
 public class todos extends postre {
     @Override
     public void seleccion(){
-                int op;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Que postre desea? 1.Gelatina  2.Flan  3.Ponque tres leches" );
-        op = sc.nextInt();
+        int op= Integer.parseInt(JOptionPane.showInputDialog("Que postre desea? \n 1.Gelatina \n 2.Flan \n 3.Ponque tres leches" ));
         switch (op){
-            case 1:
+            case 1:{
                 sel= "Gelatina";
-            case 2:
+            }
+            case 2:{
                 sel= "Flan";
-            case 3:
-                sel= "Ponque tres leches";       
+            }
+            case 3:{
+                sel= "Ponque tres leches";
+            }
         }
     }
 }

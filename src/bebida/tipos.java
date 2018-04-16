@@ -5,7 +5,7 @@
  */
 package bebida;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,13 +15,9 @@ public class tipos extends bebidas {
 
     @Override
     public void seleccion() {
-        Scanner sc = new Scanner(System.in);
-        int op;
-        System.out.println("Que le gustaria beber? 1. Bebida caliente 2. Gaseosa 3. Jugo 4. Licor");
-        a = sc.nextInt();
+        int a= Integer.parseInt(JOptionPane.showInputDialog("Que le gustaria beber? \n 1. Bebida caliente \n 2. Gaseosa \n 3. Jugo \n 4. Licor"));
         if (a == 1) {
-            System.out.println("Que bebida desea? 1. Tinto 2. Cafe 3. Agua aromatica");
-            op = sc.nextInt();
+            int op= Integer.parseInt(JOptionPane.showInputDialog("Que bebida desea? \n 1. Tinto \n 2. Cafe \n 3. Agua aromatica"));
             switch (op) {
                 case 1:
                     sel = "Tinto";
@@ -32,9 +28,7 @@ public class tipos extends bebidas {
             }
         }
         if (a == 2) {
-            System.out.println("Que gaseosa desea? 1.Coca cola  2.Pepsi  3.Quatro 4.Colombiana");
-
-            op = sc.nextInt();
+            int op= Integer.parseInt(JOptionPane.showInputDialog("Que gaseosa desea? \n 1.Coca cola \n 2.Pepsi \n 3.Quatro \n 4.Colombiana"));
             switch (op) {
                 case 1:
                     sel = "Coca cola";
@@ -49,8 +43,7 @@ public class tipos extends bebidas {
             }
         }
         if (a == 3) {
-            System.out.println("Que jugo desea? 1. Fresa 2. Mora 3. Maracuya");
-            op = sc.nextInt();
+            int op= Integer.parseInt(JOptionPane.showInputDialog("Que jugo desea? \n 1. Fresa \n 2. Mora \n 3. Maracuya"));
             switch (op) {
                 case 1:
                     sel = "Fresa";
@@ -61,8 +54,7 @@ public class tipos extends bebidas {
             }
         }
         if (a == 4) {
-            System.out.println("Que licor desea?  1.Vino  2.Whiskey  3.Ginebra  4.Ron 5 .Vodka");
-            op = sc.nextInt();
+            int op= Integer.parseInt(JOptionPane.showInputDialog("Que licor desea? \n 1.Vino \n 2.Whiskey \n 3.Ginebra \n 4.Ron \n 5 .Vodka"));
             switch (op) {
                 case 1:
                     sel = "Vino";
@@ -78,4 +70,3 @@ public class tipos extends bebidas {
         }
     }
 }
-

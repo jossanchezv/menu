@@ -6,6 +6,7 @@
 package Entrada;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,47 +17,49 @@ Scanner as = new Scanner(System.in);
    
     @Override
     public void seleccion() {
-        System.out.println("Como entrada tenemos Fruta o Sopa; que le gustaria? 1. Fruta 2. Sopa");
-        preferencia = as.nextInt();
+
+        preferencia = Integer.parseInt(JOptionPane.showInputDialog("Como entrada tenemos Fruta o Sopa; que le gustaria? \n 1. Fruta \n 2. Sopa"));
         if (preferencia == 1) {
+            
+
+            int anadir =  Integer.parseInt(JOptionPane.showInputDialog("La fruta se compone de: Papaya, fresa y melón, desea agregar algo más? \n 1. Si \n 2. No "  ));
+
             int op = 0;
-            int anadir;
-            Scanner sc = new Scanner(System.in);
-            Scanner dd = new Scanner(System.in);
-            System.out.println("La fruta se compone de: Papaya, fresa y melón, desea agregar algo más?");
-            System.out.println("1. Si 2. No");
-            anadir = dd.nextInt();
             if (anadir == 1) {
-                System.out.println("Que otro ingrediente desea?");
-                System.out.println("1. Uvas 2. Cerezas 3. Banano");
-                op = sc.nextInt();
-                        
+                op =  Integer.parseInt(JOptionPane.showInputDialog("Que otro ingrediente desea \n 1. Uvas \n2. Cerezas \n3. Banano" ));
                 switch (op) {
-                    case 1:
+                    case 1:{
                         sel = "uvas";
+                    }
                     case 2:
                         sel = "cerezas";
                     case 3:
                         sel = "banano";
                     default:
-                        sel = "No ha seleccionado nada";
-                }
+                        sel= "No ha seleccionado nada";
+                }            
             }
         }
         if (preferencia == 2) {
             int op;
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Que sopa desea? 1.Ajiaco  2.Cerdo  3.Pollo");
-
-            op = sc.nextInt();
+            op =   Integer.parseInt(JOptionPane.showInputDialog("Que sopa desea? \n 1.Ajiaco \n 2.Arroz \n 3Colisero"));
             switch (op) {
                 case 1:
-                    sel = "Res";
+                    sel = "Ajiaco";
                 case 2:
-                    sel = "Cerdo";
+                    sel = "Arroz";
                 case 3:
-                    sel = "Pollo";
+                    sel = "Colisero";
+                default:
+                    sel = "no ha seeccionado nada";
             }
         }
     }
+
+    @Override
+    public void imprimir() {
+        JOptionPane.showMessageDialog(null, sel);
+    }
+
+
 }
